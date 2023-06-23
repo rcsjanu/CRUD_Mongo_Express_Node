@@ -4,6 +4,6 @@
 
 1. npm install
 2. node index
-Project is been started
+
 
 This is a backend project so can test it using Postman.
