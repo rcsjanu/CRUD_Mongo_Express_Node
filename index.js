@@ -17,6 +17,6 @@ app.use(cors());
 
 app.use('/', routes)
 
-app.listen(5000, () => {
+app.listen(2000, () => {
     console.log(`Server Started at 5000`)
 })
