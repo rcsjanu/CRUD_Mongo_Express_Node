@@ -6,7 +6,7 @@ const mongoDbConnect = require('./config/dbConnect')
 const routes = require('./routes/routes');
 
 
-// mongoDbConnect(process.env.DATABASE_URL);
+mongoDbConnect(process.env.DATABASE_URL);
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 
