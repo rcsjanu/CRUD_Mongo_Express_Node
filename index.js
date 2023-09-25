@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require("cookie-parser")
 const cors = require("cors")
-const mongoDbConnect= require ('./config/dbConnect')
+const mongoDbConnect = require('./config/dbConnect')
 const routes = require('./routes/routes');
 
 
@@ -15,8 +15,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors());
 
-app.use('/home',(req,res) =>{
-    res.write("Welcome to NODE EXPRESS application...!!!")
+app.use('/home', (req, res) => {
+    res.send("Welcome to NODE EXPRESS application...!!!")
 })
 app.use('/', routes)
 
